@@ -89,3 +89,17 @@ else:
 ```
 ## output:
 ![output](https://github.com/vyshu888/AIES-LAB/blob/a883c6d65ccb8d02ad16b95137bcc50e3f66a3ef/Screenshot%202026-07-07%20112842.png)
+
+## EXPERIMENT -6 Towerofhanoi
+```
+def TowerOfHanoi(n,source,destination,auxiliary):
+    if n == 1:
+        print("Move disk 1 from source", source,"to destination", destination)
+        return 
+    TowerOfHanoi(n-1,source,auxiliary,destination)
+    print("Move disk",n,"from source",source,"to destination",destination)
+    TowerOfHanoi(n-1,auxiliary,destination,source)
+n = 4
+TowerOfHanoi(n,'A','B','C')
+```
+![output]()
