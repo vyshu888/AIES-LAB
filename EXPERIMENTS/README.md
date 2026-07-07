@@ -102,4 +102,4 @@ def TowerOfHanoi(n,source,destination,auxiliary):
 n = 4
 TowerOfHanoi(n,'A','B','C')
 ```
-![output]()
+![output](https://github.com/vyshu888/AIES-LAB/blob/53a71e7e217ee837014bba6a56f64821c671e161/Screenshot%202026-07-07%20114031.png)
