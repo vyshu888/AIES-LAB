@@ -88,4 +88,4 @@ else:
     print("No solution found")
 ```
 ## output:
-![output]()
+![output](https://github.com/vyshu888/AIES-LAB/blob/a883c6d65ccb8d02ad16b95137bcc50e3f66a3ef/Screenshot%202026-07-07%20112842.png)
