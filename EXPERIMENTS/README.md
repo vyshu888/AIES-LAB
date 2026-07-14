@@ -258,4 +258,4 @@ max_number = simple_hill_climbing(numbers)
 
 print("The maximum number in the list is:", max_number)
 ```
-![output]()
+![output](https://github.com/vyshu888/AIES-LAB/blob/c7b20f9c7667446cb00357f15574620bc239e4bf/Screenshot%202026-07-14%20111348.png)
