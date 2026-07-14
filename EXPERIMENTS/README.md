@@ -212,3 +212,50 @@ if __name__ == "__main__":
         print("{} ) {}".format(i, a.path[i]))
 ```
 ![output](https://github.com/vyshu888/AIES-LAB/blob/faaf9f74cc8d08f4725b96ab573a9d9137f24e05/Screenshot%202026-07-14%20110639.png)
+## EXPERIMENT -8 (HILL CLIMBING ALGORITHM)
+```
+import random
+def objective_function(solution):
+    return sum(solution)
+
+def generate_neighbor(current_solution):
+    neighbor = current_solution[:]
+    index = random.randint(0, len(neighbor) - 1)
+    neighbor[index] = 1 - neighbor[index]
+    return neighbor
+
+def hill_climbing():
+    current_solution = [random.randint(0, 1) for _ in range(10)]
+    current_fitness = objective_function(current_solution)
+    while True:
+        neighbor = generate_neighbor(current_solution)
+        neighbor_fitness = objective_function(neighbor)
+        if neighbor_fitness >= current_fitness:
+            current_solution = neighbor
+            current_fitness = neighbor_fitness
+        else:
+            break
+
+    return current_solution, current_fitness
+best_solution, best_fitness = hill_climbing()
+
+print("Best Solution:", best_solution)
+print("Best Fitness:", best_fitness)
+def simple_hill_climbing(numbers):
+    current_index = 0
+
+    while True:
+        if current_index + 1 < len(numbers):
+            if numbers[current_index] < numbers[current_index + 1]:
+                current_index += 1
+            else:
+                return numbers[current_index]
+        else:
+            return numbers[current_index]
+numbers = [1, 3, 7, 12, 9, 5]
+
+max_number = simple_hill_climbing(numbers)
+
+print("The maximum number in the list is:", max_number)
+```
+![output]()
